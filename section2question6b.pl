@@ -102,7 +102,7 @@ while (my $row = <$fh>) {
 
 say "### Section 2 Question 6 ###";
 say "i. The length of the sequence is: ".length($sequence);
-say "";
+say "==================================================";
 say "ii. Complementary sequence of the nucleotide";
 my $reverse_sequence = reverse $sequence;
 $reverse_sequence =~ tr/ACGT/TGCA/;
@@ -112,7 +112,7 @@ my $first_portion = length($sequence)/2;
 
 my $sequence_first = substr $sequence, 0, $first_portion;
 my $sequence_second = substr $sequence, $first_portion, $first_portion;
-
+say "==================================================";
 say "iii. ";
 say "First portion ###".$sequence_first."###";
 say "";
